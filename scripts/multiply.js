@@ -4,7 +4,7 @@ var second = document.querySelector('#number2');
 var result1 = document.querySelector('.result1');
 
 if (!!window.SharedWorker) {
-  var myWorker = new SharedWorker("scripts/worker.js");
+  var myWorker = new SharedWorker("./worker.js");
 
   first.onchange = function() {
     myWorker.port.postMessage([first.value, second.value]);

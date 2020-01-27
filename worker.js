@@ -1,3 +1,5 @@
+setInterval(() => console.log('*', Date.now()), 1000);
+
 onconnect = function(e) {
   var port = e.ports[0];
 
